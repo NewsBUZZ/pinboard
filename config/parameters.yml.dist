@@ -8,6 +8,7 @@ db:
 base_url: /
 #base_url: /pinboard/
 #base_url: http://your-host.com/pinboard
+min_error_code: 302
 logging:
     # in seconds
     long_request_time:
