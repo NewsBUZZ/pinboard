@@ -452,7 +452,7 @@ class AggregateCommand extends Command
             FROM
                 request
             WHERE
-                status >= 500
+                status >= '.$this->params['min_error_code'].'
             GROUP BY
                 server_name, hostname, script_name
             LIMIT
